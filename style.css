@@ -160,3 +160,112 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* Project Card Improvements */
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 220px;
+}
+
+.project-card p {
+    color: #64748b;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 18px;
+    margin-top: auto;
+    font-size: 23px;
+    color: #334155;
+}
+
+/* Announcements */
+
+.announcement {
+    padding: 12px 0;
+}
+
+.announcement + .announcement {
+    border-top: 1px solid #cbd5e1;
+}
+
+.announcement h3 {
+    margin: 0 0 6px;
+    font-size: 14px;
+}
+
+.announcement p {
+    margin: 0;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* Trending Profiles */
+
+.trending-list {
+    display: grid;
+    gap: 22px;
+}
+
+.trend {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 12px;
+    align-items: center;
+}
+
+.trend strong {
+    font-size: 14px;
+}
+
+.trend p {
+    margin: 5px 0 0;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #38bdf8;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.avatar.purple {
+    background: #a855f7;
+}
+
+.avatar.green {
+    background: #22c55e;
+}
+
+.avatar.amber {
+    background: #f59e0b;
+}
+
+/* Hover Effects */
+
+.project-card:hover {
+    box-shadow: 0 6px 16px #00000025;
+    transform: translateY(-2px);
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    color: #dbeafe;
+}
+
+.actions button:hover {
+    background: #0369a1;
+}
